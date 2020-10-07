@@ -2,9 +2,9 @@
 
 ## Requirements
 
-* Node.js 4+
-* NPM / YARN
-* Webpack / Browserify (optional)
+- Node.js 4+
+- NPM / YARN
+- Webpack / Browserify (optional)
 
 ## Installation
 
@@ -19,19 +19,21 @@ $ yarn add webflow-api
 ## Usage
 
 ```javascript
-const Webflow = require('webflow-api');
+const Webflow = require("webflow-api");
 
 // Initialize the API
-const api = new Webflow({ token: 'api-token' });
+const api = new Webflow({ token: "api-token" });
 
 // Fetch a site
-api.site({ siteId: '580e63e98c9a982ac9b8b741' }).then(site => console.log(site));
+async () => {
+  console.log(await api.site({ siteId: "58e32bace1998d6e3fee8d71" }));
+};
 ```
 
 The `Webflow` constructor takes several options to initialize the API client:
 
-* `token` - the API token **(required)**
-* `version` - the version of the API you wish to use (optional)
+- `token` - the API token **(required)**
+- `version` - the version of the API you wish to use (optional)
 
 All of the API methods are documented in the [API documentation](https://developers.webflow.com).
 
