@@ -2,9 +2,9 @@
 
 ## Requirements
 
-- Node.js 4+
-- NPM / YARN
-- Webpack / Browserify (optional)
+* Node.js 4+
+* NPM / YARN
+* Webpack / Browserify (optional)
 
 ## Installation
 
@@ -19,10 +19,10 @@ $ yarn add webflow-api
 ## Usage
 
 ```javascript
-const Webflow = require("webflow-api");
+const Webflow = require('webflow-api');
 
 // Initialize the API
-const api = new Webflow({ token: "api-token" });
+const api = new Webflow({ token: 'api-token' });
 
 // Fetch a site
 async () => {
